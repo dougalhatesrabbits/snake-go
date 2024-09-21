@@ -73,7 +73,7 @@ func (ts *Titlescreen) Tick(event tl.Event) {
 			gs = NewGamescreen()
 			sg.Screen().SetLevel(gs)
 		}
-		if event.Key == tl.KeyCtrlO {
+		if event.Key == tl.KeyCtrlE {
 			gop := NewOptionsscreen()
 			sg.Screen().SetLevel(gop)
 		}
