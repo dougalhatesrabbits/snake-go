@@ -1,7 +1,7 @@
 package main
 
 import (
-	s "github.com/tristangoossens/snake-go/game"
+	s "github.com/dougalhatesrabbits/snake-go"
 )
 
 func main() {
