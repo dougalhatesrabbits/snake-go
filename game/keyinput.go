@@ -53,10 +53,10 @@ func (gos *Gameoverscreen) Tick(event tl.Event) {
 	if event.Type == tl.EventKey {
 		switch event.Key {
 		// If the key pressed is backspace the game will restart!!
-		case tl.KeyHome:
+		case tl.KeyCtrlR:
 			// Will call the RestartGame function to restart the game.
 			RestartGame()
-		case tl.KeyDelete:
+		case tl.KeyCtrlE:
 			// Will end the game using a fatal log. This uses the termbox package as termloop does not have a function like that.
 			tb.Close()
 		case tl.KeySpace:
@@ -73,7 +73,7 @@ func (ts *Titlescreen) Tick(event tl.Event) {
 			gs = NewGamescreen()
 			sg.Screen().SetLevel(gs)
 		}
-		if event.Key == tl.KeyInsert {
+		if event.Key == tl.KeyCtrlO {
 			gop := NewOptionsscreen()
 			sg.Screen().SetLevel(gop)
 		}
